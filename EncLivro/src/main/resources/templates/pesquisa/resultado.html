@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Encontrando Livros</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/form.css">
+	</head>
+	
+	<body>
+	<div class="container">
+		<div class="card" th:each="livro : ${livros}">
+		    <div class="card-header">
+				<span th:text="${livro.titulo}"></span>
+		    </div>
+		
+			<div class="row">
+			<div class="card-body">
+			
+				<div class="col-3 float-start">
+				
+					Autores:<span th:text="${#strings.listJoin(livro.autor,',')}"></span>
+						
+					
+				    </div>
+				    
+				    <div>
+						Data de Publicação:<span th:text="${livro.datapublicacao}">10/05/2099</span>
+				    </div>
+				    
+				 </div>   
+				    
+				    <div class="col-9 float-end">
+				    	<img class="img-thumbnail float-end" width="200" height="200" th:src="${livro.imagem}"/>
+					
+				    </div>
+				
+			</div>
+	        </div>		
+		</div>
+	
+	
+	
+	</div>
+	</body>
+	
+	
+	
+</html>

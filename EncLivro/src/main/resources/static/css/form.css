@@ -1,0 +1,17 @@
+Body {
+	background-color: #4169E1;
+}
+
+.txtJumbo{
+   text-align: center;
+   
+}
+
+.fundoJumbo{
+	background-color: #00BFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
