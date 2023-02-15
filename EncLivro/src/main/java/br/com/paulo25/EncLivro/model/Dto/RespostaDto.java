@@ -1,4 +1,4 @@
-package br.com.paulo25.EncLivro.model.dto;
+package br.com.paulo25.EncLivro.model.Dto;
 
 
 
@@ -9,15 +9,15 @@ public class RespostaDto {
 	
 	private String titulo;
 	private List<String> autor = new ArrayList<>();
-	private String datapublicacao;
+	private String dataPublicacao;
 	private String imagem;
 	
 	
 	
-	public RespostaDto(String titulo, List<String> autor, String datapublicacao, String imagem) {
+	public RespostaDto(String titulo, List<String> autor, String dataPublicacao, String imagem) {
 		this.titulo = titulo;
 		this.autor = autor;
-		this.datapublicacao = datapublicacao;
+		this.dataPublicacao = dataPublicacao;
 		this.imagem = imagem;
 	}
 	
@@ -36,8 +36,8 @@ public class RespostaDto {
 	public List<String> getAutor() {
 		return autor;
 	}
-	public String getDatapublicacao() {
-		return datapublicacao;
+	public String getDataPublicacao() {
+		return dataPublicacao;
 	}
 	public String getImagem() {
 		return imagem;
@@ -53,8 +53,8 @@ public class RespostaDto {
 		this.autor = autor;
 	}
 
-	public void setDatapublicacao(String datapublicacao) {
-		this.datapublicacao = datapublicacao;
+	public void setDataPublicacao(String dataPublicacao) {
+		this.dataPublicacao = dataPublicacao;
 	}
 
 	public void setImagem(String imagem) {

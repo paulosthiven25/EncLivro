@@ -6,11 +6,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import br.com.paulo25.EncLivro.model.dto.ApiDto;
-import br.com.paulo25.EncLivro.model.dto.ImageLinks;
-import br.com.paulo25.EncLivro.model.dto.Item;
-import br.com.paulo25.EncLivro.model.dto.RespostaDto;
-import br.com.paulo25.EncLivro.model.dto.VolumeInfo;
+import br.com.paulo25.EncLivro.model.ApiDto;
+import br.com.paulo25.EncLivro.model.ImageLinks;
+import br.com.paulo25.EncLivro.model.Item;
+import br.com.paulo25.EncLivro.model.VolumeInfo;
+import br.com.paulo25.EncLivro.model.Dto.RespostaDto;
 
 public class ConversorDeDto {
 

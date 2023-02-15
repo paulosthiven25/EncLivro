@@ -14,34 +14,42 @@
 	
 	<body>
 	<div class="container">
+	
+		<div>
+			<span class="msgListaVazia" th:text="${msgListaVazia}"></span>		
+		</div>
 		<div class="card" th:each="livro : ${livros}">
 		    <div class="card-header">
 				<span th:text="${livro.titulo}"></span>
 		    </div>
 		
 			<div class="row">
-			<div class="card-body">
 			
-				<div class="col-3 float-start">
+				<div class="card-body">
 				
-					Autores:<span th:text="${#strings.listJoin(livro.autor,',')}"></span>
+					<div class="col-3 float-start">
+					
+						Autores:<span th:text="${#strings.listJoin(livro.autor,',')}"></span>
+							
 						
+					    </div>
+					    
+					    <div>
+							Data de Publicação:<span th:text="${livro.dataPublicacao}">10/05/2099</span>
+					    </div>
+					    
+					 </div>   
+					    
+					    <div class="col-9 float-end">
+					    	<img class="img-thumbnail float-end" width="200" height="200" th:src="${livro.imagem}"/>
+						
+					    </div>
 					
-				    </div>
-				    
-				    <div>
-						Data de Publicação:<span th:text="${livro.datapublicacao}">10/05/2099</span>
-				    </div>
-				    
-				 </div>   
-				    
-				    <div class="col-9 float-end">
-				    	<img class="img-thumbnail float-end" width="200" height="200" th:src="${livro.imagem}"/>
-					
-				    </div>
-				
-			</div>
-	        </div>		
+				</div>
+	        </div>	
+	        <form action="/livro/novaPesquisa" method="get">
+	        	<button class="btn btn-success mt-3" type="submit">Nova Pesquisa</button>
+	        </form>	
 		</div>
 	
 	

@@ -38,7 +38,7 @@ public class FormatadoraDeStringsDeDatas {
 				  }
 				  
 			} catch (DateTimeParseException e) {
-				System.out.println(e.getLocalizedMessage());;
+				//System.out.println(e.getLocalizedMessage());;
 				 return "data não disponível"; 
 				
 			}

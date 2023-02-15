@@ -6,11 +6,12 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import br.com.paulo25.EncLivro.model.dto.ApiDto;
-import br.com.paulo25.EncLivro.model.dto.ImageLinks;
-import br.com.paulo25.EncLivro.model.dto.Item;
-import br.com.paulo25.EncLivro.model.dto.RespostaDto;
-import br.com.paulo25.EncLivro.model.dto.VolumeInfo;
+
+import br.com.paulo25.EncLivro.model.ApiDto;
+import br.com.paulo25.EncLivro.model.ImageLinks;
+import br.com.paulo25.EncLivro.model.Item;
+import br.com.paulo25.EncLivro.model.VolumeInfo;
+import br.com.paulo25.EncLivro.model.Dto.RespostaDto;
 
 class ConversorDeDtoTest {
 	private ApiDto apidto;
@@ -43,7 +44,7 @@ class ConversorDeDtoTest {
 		Assertions.assertEquals("pao",rd.getTitulo());
 		Assertions.assertTrue(rd.getAutor().contains("pao1"));
 		Assertions.assertTrue(rd.getAutor().contains("pao2"));
-		Assertions.assertEquals("20/10/2000",rd.getDatapublicacao());
+		Assertions.assertEquals("20/10/2000",rd.getDataPublicacao());
 		Assertions.assertEquals("link",rd.getImagem());
 		
 	}

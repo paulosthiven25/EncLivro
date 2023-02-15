@@ -1,7 +1,8 @@
-package br.com.paulo25.EncLivro.model.dto;
+package br.com.paulo25.EncLivro.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ImageLinks {
 	
 	private String thumbnail;

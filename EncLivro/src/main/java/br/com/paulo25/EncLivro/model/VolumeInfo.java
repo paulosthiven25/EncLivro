@@ -1,13 +1,16 @@
-package br.com.paulo25.EncLivro.model.dto;
+package br.com.paulo25.EncLivro.model;
 
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 
+
+@JsonIgnoreProperties(ignoreUnknown = true) 
 public class VolumeInfo {
 	private String title;
 	private List<String> authors = new ArrayList<String>();

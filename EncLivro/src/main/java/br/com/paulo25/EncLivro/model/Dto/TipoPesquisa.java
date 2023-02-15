@@ -1,4 +1,4 @@
-package br.com.paulo25.EncLivro.model.dto;
+package br.com.paulo25.EncLivro.model.Dto;
 
 import java.util.ArrayList;
 import java.util.Arrays;
