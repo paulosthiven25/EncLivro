@@ -8,7 +8,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.paulo25</groupId>
-	<artifactId>EncLivro</artifactId>
+	<artifactId>enc-livro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EncLivro</name>
 	<description>projeto de buscador de livros simples,usando a api de livros da google</description>

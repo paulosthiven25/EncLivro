@@ -20,7 +20,7 @@ public class ApiBookService {
 	
 	
 	@Autowired
-	private GerenciadorRequisiçãoBase grb;
+	private GerenciadorRequisicaoBase grb;
 	
 	
 	

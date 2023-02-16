@@ -1,0 +1,4 @@
+FROM openjdk:11
+COPY target/enc-livro-1.0.jar /app/encLivro.jar
+WORKDIR /app
+ENTRYPOINT ["java", "-jar", "encLivro.jar"]

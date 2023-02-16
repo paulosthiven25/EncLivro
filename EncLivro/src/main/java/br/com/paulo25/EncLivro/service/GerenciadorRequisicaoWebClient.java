@@ -12,7 +12,7 @@ import org.springframework.web.util.DefaultUriBuilderFactory;
 
 
 @Service
-public class GerenciadorRequisiçãoWebClient implements GerenciadorRequisiçãoBase{
+public class GerenciadorRequisicaoWebClient implements GerenciadorRequisicaoBase{
 	
 	@Value("${EncLivro.Api.ApiKey}")
 	private String APIKEY = "";
@@ -30,7 +30,7 @@ public class GerenciadorRequisiçãoWebClient implements GerenciadorRequisição
 	            wc.get()
 	            .uri(uriBuilder -> uriBuilder
 	            	    .path("/volumes/")
-	            	    .queryParam("q", String.join(":", "{pesquisa}", "{texto}"))
+	            	    .queryParam("q", String.join(":", "{modoPesquisa}", "{texto}"))
 	            	    .queryParam("key","{apiKey}")
 	            	    //.queryParam("maxResults","1")
 	            	    .build(modoPesquisa,texto,APIKEY))

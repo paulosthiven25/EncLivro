@@ -29,7 +29,7 @@ class ApiBookServiceTest {
 	@InjectMocks
 	private ApiBookService abs;
 	@Mock
-	private GerenciadorRequisiçãoBase grb;
+	private GerenciadorRequisicaoBase grb;
 	@Mock
 	private ObjectMapper om;
 	
